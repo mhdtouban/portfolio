@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<body id="post-item">
+
+  <header>
+    <h1><a href="{{ .Site.BaseURL }}/">Mohammed Touban</a></h1>
+    <a class="subhead" href="{{ .Site.BaseURL }}/post"><span>Blog</span></a>
+  </header>
+
+  <div id="content-outer-container">
+    <div id="content-inner-container">
+      <h2>{{ .Title }}</h2>
+      <p class="subtitle">{{ .Date.Format "1 January 2006" }}</p>
+      <hr/>
+      {{ .Content }}
+      <p class="signature">&mdash; Mohammed Touban</p>
+    </div>
+  </div>
+
+</body>
+
+{{ end }}

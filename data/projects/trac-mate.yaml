@@ -1,0 +1,9 @@
+modalID: 3
+title: TRACmate
+date: 2014-11-16
+img: trac-mate.jpg
+client: Gridstone
+clientLink: "https://play.google.com/store/apps/details?id=com.gridstone.teamactivator"
+itemLink: "https://play.google.com/store/apps/details?id=com.gridstone.teamactivator"
+category: Android
+description: TRACmate is a service that aids teams of people in coordinating, tracking, and managing their response to an incident. (Think volunteer firefighters assembling and heading out to fight a fire).<br/><br/>It's also the first project where I got to lead a team of two other developers at Gridstone (Emile Pascoe and Jamie Princep) when building the Android app. Together, we quickly built a [Holo designed](https://lh5.ggpht.com/76pZQDcOlG5QvIcJZl4u0PAUls0Y41tG0F-YA_dj1-uujU0EfikOr-qAaIaaoVlRiV8=h900-rw) prototype followed by the more refined Material version you see in the above screenshots.<br/><br/>The design process of the application was particularly challenging, as development began before Google released Lollipop with all its changes. Once that happened, much of the UI had to be refactored to adhere to the new design specification.<br/><br/>This project was also technically challenging, as it involved constant communication with its backend component to ensure all responded users stayed in sync.
