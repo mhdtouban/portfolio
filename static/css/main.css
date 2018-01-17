@@ -231,6 +231,8 @@ hr {
 
 .screen {
   max-width: 100%;
+  height: 32%;
+    width: 32%;
 }
 
 h2 {

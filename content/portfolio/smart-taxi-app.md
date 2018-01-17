@@ -1,19 +1,18 @@
----
+ ---
 title: "Smart Taxi ME"
 icon: "smarttaxi.webp"
-screens: ["the-whole-pantry-screen1.png", "the-whole-pantry-screen2.png"]
+screens: ["smarttaxi1.png", "smarttaxi2.png"]
 draft: false
 ---
+Built at [Aiia-solutions](http://www.aiia-solutions.com/).Smart Taxi or Lyft of Arab world ! is an ingenious application architected and conceived in the region, in order to best serve the specific needs & requirements of taxi users in the GCC Countries in particular as well as the Arab world in general.
 
-This was the first application I built as a freelance developer rather than with
-Gridstone. As an external contractor I in no way condone the actions of the client.
-I'm proud of the app's implementation and design, and would like to discuss it in
-isolation from the scandal.
+Features
+<lu>
+<li>Select pickup location</li>
+<li>Taxi Info</li>
+<li>Live tracking of taxi driver</li>
+<li>Call your taxi driver</li>
+<li>notification for driver status</li>
+</lu>
 
-Android apps are often considered as an afterthought to their iOS counterparts. With
-The Whole Pantry, Alex Benevento led the charge as the iOS developer with
-[Zane David](https://dribbble.com/zane_david) providing him with dedicated designs.
-For Android, it was up to me to come up with analogous screens that would feel at
-home.
-
-I was chuffed to have the app win a place in Google's [Beautiful Design Winter 2013](https://play.google.com/store/apps/collection/promotion_3000235_beautiful_apps) collection.
+These days the app is looking a little dated with its Holo era design, but it still functions just fine. Check it out in [Google Play](https://play.google.com/store/apps/details?id=smart.taxi.pmu.client).

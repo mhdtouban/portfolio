@@ -1,16 +1,13 @@
 ---
-title: "4genies"
+title: "4Genies"
 icon: "4genies.webp"
 subtitle: "The Magical Mobile Recharge App"
-screens: ["traffic-screen1.png", "traffic-screen2.png"]
+screens: ["4genies.png"]
 draft: false
 ---
-[4Genies](https://play.google.com/store/apps/details?id=com.aiia.cardreader) The Magical Mobile Recharge App</br>
+Built at [Aiia-Solutions](http://www.aiia-solutions.com/). 4Genies is neutral and independent self-care app for mobile subscriber in the GCC countries. 4Genies revolutionized the recharge process for prepaid customers by allowing them to seamlessly recharge a voucher by taking a picture and automatically recognize the numbers and perform the recharge command for each operator.
 
-Recharge your prepaid number simply by taking a picture of the recharge voucher or reading the recharge code.
-<ul>
-<li> in Saudi Arabia (STC, Mobily & Zain), No more entering your ID every time you want to recharge credit </li>
-<li> No more errors in entering the long recharge codes </li>
-<li> No more repeating the entire operation if you made a simple mistake </li>
-</ul>
-Our Recharge Genie is at your command… Recharge your credit with just one click!
+4Genies allows user to better control their telecom budget by providing detailed charts of their telecom usage on both calls and data usage with a daily, weekly and monthly view.
+
+The digitalization of the voucher picture was developed internally by AiiA solutions using TensorFlow.
+The app can be found in [Google Play](https://play.google.com/store/apps/details?id=com.aiia.cardreader).

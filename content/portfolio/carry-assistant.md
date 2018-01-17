@@ -1,23 +1,17 @@
 ---
 title: "Carry Assistant"
 icon: "carry-assistent.webp"
-screens: ["alert-sa-screen1.png", "alert-sa-screen2.png"]
+screens: ["carry1.webp", "carry2.webp"]
 draft: false
 ---
 
-At [Gridstone](https://gridstone.com.au), I built the Alert SA Android app as part
-of a suite of applications for the South Australian Government. My colleagues also
-developed a [website](https://www.alert.sa.gov.au) and an
-[iOS app](https://itunes.apple.com/us/app/alert-sa/id998243397?ls=1&mt=8). The
-service aims to deliver information and warnings to those living in South Australia,
-allowing users to browse nearby events and set up watch zones.
+Built at [Ideatolife](https://ideatolife.me) for an on-demand delivery startup based out of Dubai, UAE. [Carry](https://carry.delivery/ae/en/) is driven via an app that drivers can download to their smartphones for both Android and iOS.
 
-This app was the first I designed and developed with Google's
-[material design](https://design.google.com/) spec in mind. It also allowed me to
-make use of the very latest libraries and tools, and serves as a fine example of a
-modern Android Application.
+Anyone with access to a vehicle can become a Carry Assistant! Whether you are a freelancer, a student, or simply want to make the most of your extra time, just apply with us and we’ll get you started on our platform to help deliver the best experience to our customers!
 
-Unfortunately this application is no longer maintained by Gridstone, and development
-effort has since shifted to another company. The app can still be found in
-[Google Play](https://play.google.com/store/apps/details?id=au.gov.alert.sa),
-however the design and implementation has been replaced wholesale.
+The app can be found in
+[Google Play](https://play.google.com/store/apps/details?id=com.carry.driverapp).
+
+<iframe src="https://player.vimeo.com/video/171431638" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/171431638">Kiss</a> from <a href="https://vimeo.com/user53303664">Carry</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</br>
