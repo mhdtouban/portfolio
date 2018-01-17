@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Chris Horner">
+    <meta name="description" content="Android developer and designer.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dagger2 in the Real World</title>
+    <link rel ="stylesheet" href="https://mhdtouban.github.io/portfolio//css/main.css" type="text/css">
+  </head>
+  
+
+<body id="post-item">
+
+  <header>
+    <h1><a href="https://mhdtouban.github.io/portfolio//">Mohammed Touban</a></h1>
+    <a class="subhead" href="https://mhdtouban.github.io/portfolio//post"><span>Blog</span></a>
+  </header>
+
+  <div id="content-outer-container">
+    <div id="content-inner-container">
+      <h2>Dagger2 in the Real World</h2>
+      <p class="subtitle">9 September 2015</p>
+      <hr/>
+      <p><em>Dagger</em> and <em>Dagger2</em> may be things you&rsquo;ve heard of if you&rsquo;re an Android developer.
+Dependency injection has been a hot topic for a while now. Often the examples you
+see are solving complex architectural problems, or are too trivial to demonstrate
+applicability.</p>
+
+<p>Let&rsquo;s look at a real world example of how <em>Dagger2</em> is used in Emergency AUS, and
+maybe spark some ideas for where Dagger could improve your existing code.</p>
+
+<p><img src="../../img/ea-sa-comparison.png" class="post-image-right"/></p>
+
+<p><a href="//play.google.com/store/apps/details?id=com.gridstone.emergencyaus">Emergency AUS</a>
+and <a href="https://play.google.com/store/apps/details?id=au.gov.alert.sa">Alert SA</a> from
+<a href="//gridstone.com.au/work/emergency-aus">Gridstone</a> are two very similar applications.
+One provides information on events occurring Australia wide, while the other
+provides tailored information for just South Australia. Each app is defined by a
+<a href="//tools.android.com/tech-docs/new-build-system/user-guide#TOC-Build-Type-Product-Flavor-Build-Variant">gradle build flavour</a>
+residing in a single project.</p>
+
+<p>Build flavours make it easy to provide simple cosmetic customisations; it&rsquo;s
+straightforward to redefine <code>R.color.primary</code> and <code>R.string.app_name</code> between apps,
+but what about logic? In this example, we&rsquo;ll look at the differences in the map
+camera behaviour, and how Dagger can make our job of redefining it between apps
+easier.</p>
+
+<p>Each application has different logic about how the map should be displayed on first
+load. Both attempt to make use of the device&rsquo;s location if it&rsquo;s available, but also
+query the events in different ways to determine the appropriate bounds for the
+camera to snap to.</p>
+
+<p>One approach might be to simply switch on a query to <code>BuildConfig.FLAVOR</code>.</p>
+
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#902000">void</span> <span style="color:#06287e">setupMapCamera</span><span style="color:#666">(</span>Location location<span style="color:#666">)</span> <span style="color:#666">{</span>
+  <span style="color:#007020;font-weight:bold">if</span> <span style="color:#666">(</span>BuildConfig<span style="color:#666">.</span><span style="color:#4070a0">FLAVOR</span><span style="color:#666">.</span><span style="color:#4070a0">equals</span><span style="color:#666">(</span><span style="color:#4070a0">&#34;alertsa&#34;</span><span style="color:#666">)</span> <span style="color:#666">{</span>
+    moveCameraForSA<span style="color:#666">(</span>location<span style="color:#666">);</span>
+  <span style="color:#666">}</span> <span style="color:#007020;font-weight:bold">else</span> <span style="color:#666">{</span>
+    moveCameraForAus<span style="color:#666">(</span>location<span style="color:#666">);</span>
+  <span style="color:#666">}</span>
+<span style="color:#666">}</span></code></pre></div>
+
+<p>However, this approach has a few drawbacks. Mainly, we now have code within our
+<em>main</em> folder that knows about build flavours. We also now have code that&rsquo;s flavour
+specific outside of the flavour specific source directories. Ideally, the code that
+handles the logic of displaying the camera should reside only in the <em>emergencyaus</em>
+and <em>alertsa</em> folders.</p>
+
+<p>To address this, we could create two utility classes with exactly the same name and
+method signatures in our flavour folders, giving us something like&hellip;</p>
+
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#007020;font-weight:bold">public</span> <span style="color:#007020;font-weight:bold">class</span> <span style="color:#0e84b5;font-weight:bold">MapCameraController</span> <span style="color:#666">{</span>
+  <span style="color:#007020;font-weight:bold">public</span> <span style="color:#007020;font-weight:bold">static</span> CameraUpdate <span style="color:#06287e">getCameraUpdate</span><span style="color:#666">(</span>Location location<span style="color:#666">)</span> <span style="color:#666">{</span>
+    <span style="color:#60a0b0;font-style:italic">// Flavour specific code here.
+</span><span style="color:#60a0b0;font-style:italic"></span>
+  <span style="color:#666">}</span>
+<span style="color:#666">}</span></code></pre></div>
+
+<p>Now our flavour specific logic is housed in the correct directories, but our code
+is also particularly error prone. The class and method names must match exactly
+between projects (making refactoring a pain). We can&rsquo;t define an interface because
+we&rsquo;ve chosen to use static methods. If we did want to use an interface we&rsquo;d have to
+adopt a traditional Java singleton pattern&hellip;</p>
+
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#007020;font-weight:bold">public</span> <span style="color:#007020;font-weight:bold">class</span> <span style="color:#0e84b5;font-weight:bold">FlavouredCameraController</span> <span style="color:#007020;font-weight:bold">implements</span> MapCameraController <span style="color:#666">{</span>
+  <span style="color:#007020;font-weight:bold">private</span> <span style="color:#007020;font-weight:bold">static</span> MapCameraController instance <span style="color:#666">=</span> <span style="color:#007020;font-weight:bold">new</span> FlavouredMapCameraController<span style="color:#666">();</span>
+
+  <span style="color:#007020;font-weight:bold">private</span> <span style="color:#06287e">MapCameraController</span><span style="color:#666">()</span> <span style="color:#666">{}</span>
+
+  <span style="color:#007020;font-weight:bold">public</span> <span style="color:#007020;font-weight:bold">static</span> MapCameraController <span style="color:#06287e">getInstance</span><span style="color:#666">()</span> <span style="color:#666">{</span>
+    <span style="color:#007020;font-weight:bold">return</span> instance<span style="color:#666">;</span>
+  <span style="color:#666">}</span>
+
+  <span style="color:#555;font-weight:bold">@Override</span> <span style="color:#007020;font-weight:bold">public</span> CameraUpdate <span style="color:#06287e">getCameraUpdate</span><span style="color:#666">(</span>Location location<span style="color:#666">)</span> <span style="color:#666">{</span>
+    <span style="color:#60a0b0;font-style:italic">// Flavour specific code here.
+</span><span style="color:#60a0b0;font-style:italic"></span>
+  <span style="color:#666">}</span>
+<span style="color:#666">}</span></code></pre></div>
+
+<p>But now we have to duplicate this factory logic in each flavour, and traditional
+singletons just
+<a href="//stackoverflow.com/questions/137975/what-is-so-bad-about-singletons">plain suck</a>.
+This is where dependency injection comes in and magics our problems away.</p>
+
+<p>I&rsquo;m going to assume you&rsquo;re familiar with the concepts of <em>Dagger2</em> with the following
+code. If you&rsquo;re still new to the game,
+<a href="//www.youtube.com/watch?v=oK_XtfXPkqw">this talk from Greg Kick</a> provides a great
+introduction.</p>
+
+<p>In each of our flavours, we can define a flavour specific module that provides our
+required dependencies. Our Alert SA module might look like&hellip;</p>
+
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#555;font-weight:bold">@Module</span> <span style="color:#007020;font-weight:bold">public</span> <span style="color:#007020;font-weight:bold">class</span> <span style="color:#0e84b5;font-weight:bold">FlavorModule</span> <span style="color:#666">{</span>
+  <span style="color:#555;font-weight:bold">@Provides</span> <span style="color:#555;font-weight:bold">@Singleton</span> MapCameraController <span style="color:#06287e">provideMapCameraController</span><span style="color:#666">(</span>SaMapCameraController saController<span style="color:#666">)</span> <span style="color:#666">{</span>
+    <span style="color:#007020;font-weight:bold">return</span> saController<span style="color:#666">;</span>
+  <span style="color:#666">}</span>
+<span style="color:#666">}</span></code></pre></div>
+
+<p>One of our camera controlling classes can become&hellip;</p>
+
+<div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#555;font-weight:bold">@Singleton</span> <span style="color:#007020;font-weight:bold">public</span> <span style="color:#007020;font-weight:bold">class</span> <span style="color:#0e84b5;font-weight:bold">SaMapCameraController</span> <span style="color:#007020;font-weight:bold">implements</span> MapCameraController <span style="color:#666">{</span>
+  <span style="color:#555;font-weight:bold">@Inject</span> SaMapCameraController<span style="color:#666">()</span> <span style="color:#666">{}</span>
+
+  <span style="color:#555;font-weight:bold">@Override</span> <span style="color:#007020;font-weight:bold">public</span> CameraUpdate <span style="color:#06287e">getCameraUpdate</span><span style="color:#666">()</span> <span style="color:#666">{</span>
+    <span style="color:#60a0b0;font-style:italic">// Alert SA specific camera code here.
+</span><span style="color:#60a0b0;font-style:italic"></span>
+  <span style="color:#666">}</span>
+<span style="color:#666">}</span></code></pre></div>
+
+<p>&hellip;and the code in our <em>main</em> folder knows nothing about the disparate behaviour
+between flavours. All it needs to do is <code>@Inject MapCameraController</code> and Dagger
+takes care of providing the correct implementation for the current build flavour.</p>
+
+<p>An argument can be made that we&rsquo;ve introduced a lot of boilerplate code just to
+get this job done (I haven&rsquo;t even shown the required wiring up of <code>Components</code>
+that Dagger2 requires). I&rsquo;d agree if this were the only time you made use of
+dependency injection in a project. However, if you&rsquo;re already using it to solve
+other problems, you already have most of that boilerplate in place. Now you&rsquo;re
+just making use of your existing setup to provide clean resolution of dependencies
+on flavour specific logic.</p>
+
+<p>With this setup it&rsquo;s easy for us to define new <code>MapCameraController</code>
+implementations and change them any time without the client code caring. We also
+gain a singleton where:</p>
+
+<ul>
+<li>The boilerplate is Dagger&rsquo;s responsibility</li>
+<li>It can be easily mocked for testing</li>
+<li>It no longer suffers the drawback of a single global access point</li>
+</ul>
+
+<p>I hope this example sparks some ideas about areas of your code that Dagger could
+improve. It&rsquo;s not just a tool for solving
+<a href="//fernandocejas.com/2015/04/11/tasting-dagger-2-on-android/">complex architecture problems</a>,
+but has applicability in more areas than you might expect.</p>
+
+      <p class="signature">&mdash; Mohammed Touban</p>
+    </div>
+  </div>
+
+</body>
+
+
+</html>
+
