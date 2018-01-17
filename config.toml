@@ -4,3 +4,4 @@ title = "Mohammed Touban"
 pygmentsstyle = "friendly"
 pygmentsUseClasses = false
 pygmentsCodefences = true
+publishDir = "docs"

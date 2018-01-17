@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mohammed Touban</title>
+    <link>https://mhdtouban.github.io/portfolio/post/</link>
+    <description>Recent content on Mohammed Touban</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <lastBuildDate>Mon, 07 Sep 2015 18:02:23 +1000</lastBuildDate>
+    
+	<atom:link href="https://mhdtouban.github.io/portfolio/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dagger2 in the Real World</title>
+      <link>https://mhdtouban.github.io/portfolio/post/real-dagger/</link>
+      <pubDate>Mon, 07 Sep 2015 18:02:23 +1000</pubDate>
+      
+      <guid>https://mhdtouban.github.io/portfolio/post/real-dagger/</guid>
+      <description>Dagger and Dagger2 may be things you&amp;rsquo;ve heard of if you&amp;rsquo;re an Android developer. Dependency injection has been a hot topic for a while now. Often the examples you see are solving complex architectural problems, or are too trivial to demonstrate applicability.
+Let&amp;rsquo;s look at a real world example of how Dagger2 is used in Emergency AUS, and maybe spark some ideas for where Dagger could improve your existing code.</description>
+    </item>
+    
+  </channel>
+</rss>
