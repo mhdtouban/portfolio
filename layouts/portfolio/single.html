@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+<body id="portfolio-item">
+
+  <header>
+    <h1><a href="{{ .Site.BaseURL }}/">Mohammed Touban</a></h1>
+    <a class="subhead" href="{{ .Site.BaseURL }}/portfolio"><span>Portfolio</span></a>
+  </header>
+
+  <div id="content-outer-container">
+    <div id="content-inner-container">
+      <h2>{{ .Title }}</h2>
+      <hr/>
+      {{ .Content }}
+      <div class="screen-collection">
+        {{ range .Params.screens }}
+        <img class="screen" src="{{ $.Site.BaseURL }}/img/{{ . }}"/>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
+</body>
+
+{{ end }}

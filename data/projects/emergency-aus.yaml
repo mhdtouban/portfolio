@@ -1,0 +1,9 @@
+modalID: 4
+title: Emergency AUS
+date: 2013-02-06
+img: emergency-aus.jpg
+client: Gridstone
+clientLink: "https://play.google.com/store/apps/details?id=com.gridstone.emergencyaus"
+itemLink: "https://play.google.com/store/apps/details?id=com.gridstone.emergencyaus"
+category: Android
+description: Emergency AUS was the first application I developed at Gridstone. Version 2.0 of the application (as seen in the screenshots above) was also my first opportunity to contribute to the design of a project.<br/><br/>The app was built as a joint collaboration between Gridstone and [Ripe Intelligence](https://ripeintel.info/) to deliver real time information and alerts to people around Australia. It was a massive undertaking, and to this day is the application I learnt the most about Android when building.<br/><br/>These days, the app is looking at little dated with its [Holo era](http://android-developers.blogspot.com.au/2012/01/holo-everywhere.html) design. Hopefully that will change soon. For an idea of what might be coming, check out [Alert SA](https://play.google.com/store/apps/details?id=au.gov.alert.sa).

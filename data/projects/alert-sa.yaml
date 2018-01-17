@@ -1,0 +1,9 @@
+modalID: 2
+title: Alert SA
+date: 2015-06-24
+img: alert-sa.jpg
+client: Gridstone
+clientLink: "https://play.google.com/store/apps/details?id=au.gov.alert.sa"
+itemLink: "https://play.google.com/store/apps/details?id=au.gov.alert.sa"
+category: Android
+description: At Gridstone, I built the Alert SA Android app as part of a suite of applications for the South Australian Government. My colleagues also developed a [website](https://www.alert.sa.gov.au) and an [iOS app](https://itunes.apple.com/us/app/alert-sa/id998243397?ls=1&mt=8). The service aims to deliver information and warnings to those living in South Australia, allowing users to browse nearby events and set up watch zones.<br/><br/>This app was the first I designed and developed with Google's [material design](https://design.google.com/) spec in mind. It also allowed me to lash out and experiment with [Dagger2](http://google.github.io/dagger/), after having great success with Square's original Dagger library in earlier projects.<br/><br/>The build process of this app is particularly interesting, as it actually represents an early look at the next release of Emergency AUS. The Alert SA artifact is generated from a [Gradle build flavour](http://tools.android.com/tech-docs/new-build-system/user-guide#TOC-Build-Type-Product-Flavor-Build-Variant) in the new Emergency AUS codebase.
