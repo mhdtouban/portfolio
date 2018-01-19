@@ -12,4 +12,3 @@ Built at [Ideatolife](https://ideatolife.me). [Heer](http://heer.tech/) is a mom
 <li> Moment based customer engagement</li>
 <li>Shopper Behavior</li>
 </lu>
-libraryap
