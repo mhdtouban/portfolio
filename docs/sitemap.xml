@@ -40,6 +40,10 @@
   </url>
   
   <url>
+    <loc>https://mhdtouban.github.io/portfolio/portfolio/butlr/</loc>
+  </url>
+  
+  <url>
     <loc>https://mhdtouban.github.io/portfolio/portfolio/carry/</loc>
   </url>
   
@@ -50,6 +54,10 @@
   <url>
     <loc>https://mhdtouban.github.io/portfolio/categories/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mhdtouban.github.io/portfolio/portfolio/feed/</loc>
   </url>
   
   <url>
