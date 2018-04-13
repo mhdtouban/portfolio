@@ -1,0 +1,7 @@
+baseURL = "https://mhdtouban.github.io/portfolio/"
+languageCode = "en-au"
+title = "Mohammed Touban"
+pygmentsstyle = "friendly"
+pygmentsUseClasses = false
+pygmentsCodefences = true
+publishDir = "docs"
