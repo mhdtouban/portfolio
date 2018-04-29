@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<body id="portfolio">
+
+  <header>
+    <h1><a href="{{ .Site.BaseURL }}/">Mohammed Touban</a></h1>
+  </header>
+
+  <div id="content-outer-container">
+    <div id="portfolio-list-inner-container">
+      <h2>Portfolio</h2>
+      <hr/>
+      {{ .Content }}
+      <ul id="portfolio-list">
+        {{ range .Data.Pages }}
+        <li><a href="{{ .Permalink }}"><img src="{{ .Site.BaseURL }}/img/{{ .Params.icon }}"/><span>{{ .Title }}</span></a></li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+
+</body>
+{{ end }}

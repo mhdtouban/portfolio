@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mohammed Touban</title>
+    <link>https://mhdtouban.github.io/portfolio/presentation/</link>
+    <description>Recent content on Mohammed Touban</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <lastBuildDate>Fri, 27 Apr 2018 11:30:00 -0300</lastBuildDate>
+    
+	<atom:link href="https://mhdtouban.github.io/portfolio/presentation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Android Clean Architecture</title>
+      <link>https://mhdtouban.github.io/portfolio/presentation/android-clean-architecture/</link>
+      <pubDate>Fri, 27 Apr 2018 11:30:00 -0300</pubDate>
+      
+      <guid>https://mhdtouban.github.io/portfolio/presentation/android-clean-architecture/</guid>
+      <description>Handling lifecycle events, maintaining view state, and persisting data are all common challenges on Android that have contributed to the widespread adoption of clean architecture patterns like Model-View-Presenter (MVP) and Model-View-ViewModel (MVVM).
+Android Architecture Components is a new collection of libraries announced at Google I/O to help developers manage these same nagging issues. This talk explores how Architecture Components can be leveraged in an app already using clean architecture principles to help make your code even more flexible, maintainable, and testable.</description>
+    </item>
+    
+    <item>
+      <title>Android Reactive Programming</title>
+      <link>https://mhdtouban.github.io/portfolio/presentation/android-reactive-programming/</link>
+      <pubDate>Sat, 25 Nov 2017 11:45:00 -0300</pubDate>
+      
+      <guid>https://mhdtouban.github.io/portfolio/presentation/android-reactive-programming/</guid>
+      <description>A quick look at some of the ways RxJava can make development easier and more enjoyable (specifically for Android). This talk was presented at Google devfest Lebanon 2017.</description>
+    </item>
+    
+  </channel>
+</rss>
