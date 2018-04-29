@@ -1,4 +1,4 @@
-Mohammed Touban's Website
+Personal Website
 ======================
 
 Where I can write things and show the world stuff I've built.
