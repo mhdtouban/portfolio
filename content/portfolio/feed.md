@@ -5,7 +5,7 @@ screens: ["feed2.png", "feed1.png"]
 draft: false
 ---
 
-Under development at [Ideatolife](https://www.ideatolife.me/).
+Developed at [Ideatolife](https://www.ideatolife.me/).
 
 The app is currently being rewritten from scratch using kotlin with design uplifting and new functionalities!
 
@@ -20,5 +20,5 @@ Stay updated with Feed to keep yourself notified about the latest promotions & e
 5- Ask the waiter to enter the pin
 6- Enjoy your reward.
 
-The old app can be found in
+The app was completely written in kotlin and can be found in
 [Google Play](https://play.google.com/store/apps/details?id=com.feedapp.android).
