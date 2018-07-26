@@ -31,20 +31,20 @@
     
     <item>
       <title>Butlr</title>
-      <link>https://mhdtouban.github.io/portfolio/portfolio/butlr-driver/</link>
+      <link>https://mhdtouban.github.io/portfolio/portfolio/butlr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mhdtouban.github.io/portfolio/portfolio/butlr-driver/</guid>
+      <guid>https://mhdtouban.github.io/portfolio/portfolio/butlr/</guid>
       <description>Developed at Ideatolife. Butlr is a luxury concierge service devoted to saving time in someone’s busy life! The platform provides an on-demand delivery, which can include sweet treats, documents, laundry, repairs, shopping, gifts or even any pick up!
 The app was completely written in kotlin and can be found in Google Play.</description>
     </item>
     
     <item>
-      <title>Butlr</title>
-      <link>https://mhdtouban.github.io/portfolio/portfolio/butlr/</link>
+      <title>Butlr Driver</title>
+      <link>https://mhdtouban.github.io/portfolio/portfolio/butlr-driver/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mhdtouban.github.io/portfolio/portfolio/butlr/</guid>
+      <guid>https://mhdtouban.github.io/portfolio/portfolio/butlr-driver/</guid>
       <description>Developed at Ideatolife. Butlr is a luxury concierge service devoted to saving time in someone’s busy life! The platform provides an on-demand delivery, which can include sweet treats, documents, laundry, repairs, shopping, gifts or even any pick up!
 The app was completely written in kotlin and can be found in Google Play.</description>
     </item>
@@ -165,7 +165,7 @@ The app can be found in Google Play.</description>
       
       <guid>https://mhdtouban.github.io/portfolio/portfolio/uburger/</guid>
       <description>Currently under development at Ideatolife.
-UBurger is restaurant which delivers custom made burgers. Through the app users can compete to make the best burger of the month. Those burgers shared the most will be awarded valuable prizes.
+UBurger is a restaurant which delivers custom-made burgers. Through the app users can compete to make the best burger of the month by selecting the ingredients and building their own burgers. Those burgers shared the most will be awarded valuable prizes.
 The app is completely written in kotlin.</description>
     </item>
     
