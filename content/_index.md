@@ -1,1 +1,1 @@
-I like to build Android apps with a strong focus on UX.
+I build mobile apps with a strong focus on UX using Java, Kotlin, Swift and React Native.
