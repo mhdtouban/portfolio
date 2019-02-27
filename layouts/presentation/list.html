@@ -1,7 +1,6 @@
 {{ define "main" }}
 
 <body id="presentations">
-
   <header>
     <h1><a href="{{ .Site.BaseURL }}/">Mohammed Touban</a></h1>
   </header>
@@ -9,7 +8,7 @@
   <div id="content-outer-container">
     <div id="portfolio-list-inner-container">
       <h2>Presentations</h2>
-      <hr/>
+      <hr />
       {{ .Content }}
       <ul class="list">
         {{ range .Data.Pages }}
@@ -17,17 +16,16 @@
           <a href="{{ .Permalink }}">
             <h3>{{ .Title }}</h3>
             <p>
-              <span class="conference">{{ .Params.conference }}</span><br/>
+              <span class="conference">{{ .Params.conference }}</span><br />
               <span class="location">{{ .Params.location }}</span>
             </p>
-            <span id="date">{{ .Date.Format "1 January 2006" }}</span>
+            <span id="date">{{ .Date.Format "January 2006" }}</span>
           </a>
         </li>
         {{ end }}
       </ul>
     </div>
   </div>
-
 </body>
 
 {{ end }}
