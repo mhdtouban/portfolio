@@ -30,5 +30,4 @@ Choose your favorite restaurant.
 Look through its menu, select your food items, and proceed to Checkout.
 Press on "Place Order" and your food will be delivered right to your doorstep. Sahtein!
 
-The app can be found in
-[Google Play](https://play.google.com/store/apps/details?id=com.elixir.Onlivery_v3).
+Check it out on [Google Play](https://play.google.com/store/apps/details?id=com.elixir.Onlivery_v3).

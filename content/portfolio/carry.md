@@ -11,8 +11,7 @@ You simply pin the location and destination of your package, provide some info o
 
 The best part is that your package won’t be sent on a tour of the city before reaching its final destination as is sometimes the case with other similar delivery services. You’re even able to track the delivery in real time via the app.
 
-The app can be found in
-[Google Play](https://play.google.com/store/apps/details?id=carry.client.carry.ae).
+Check it out on [Google Play](https://play.google.com/store/apps/details?id=carry.client.carry.ae).
 
 <iframe src="https://player.vimeo.com/video/170595328" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/170595328">It&#039;s not you, it&#039;s me...</a> from <a href="https://vimeo.com/user53303664">Carry</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

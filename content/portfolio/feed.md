@@ -20,5 +20,5 @@ Stay updated with Feed to keep yourself notified about the latest promotions & e
 5- Ask the waiter to enter the pin
 6- Enjoy your reward.
 
-The app was completely written in kotlin and can be found in
-[Google Play](https://play.google.com/store/apps/details?id=com.feedapp.android).
+The app was completely written in kotlin.
+Check it out on [Google Play](https://play.google.com/store/apps/details?id=com.feedapp.android).
