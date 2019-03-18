@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mohammed Touban</title>
+    <title>Moe Touban</title>
     <link>https://mhdtouban.github.io/portfolio/</link>
-    <description>Recent content on Mohammed Touban</description>
+    <description>Recent content on Moe Touban</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
     <lastBuildDate>Sat, 23 Feb 2019 11:30:00 -0300</lastBuildDate>
@@ -77,7 +77,7 @@ Android Architecture Components is a new collection of libraries announced at Go
       
       <guid>https://mhdtouban.github.io/portfolio/portfolio/butlr/</guid>
       <description>Developed at Ideatolife. Butlr is a luxury concierge service devoted to saving time in someone’s busy life! The platform provides an on-demand delivery, which can include sweet treats, documents, laundry, repairs, shopping, gifts or even any pick up!
-The app was completely written in kotlin and can be found in Google Play.</description>
+The app was completely written in kotlin.</description>
     </item>
     
     <item>
@@ -87,7 +87,7 @@ The app was completely written in kotlin and can be found in Google Play.</descr
       
       <guid>https://mhdtouban.github.io/portfolio/portfolio/butlr-driver/</guid>
       <description>Developed at Ideatolife. Butlr is a luxury concierge service devoted to saving time in someone’s busy life! The platform provides an on-demand delivery, which can include sweet treats, documents, laundry, repairs, shopping, gifts or even any pick up!
-The app was completely written in kotlin and can be found in Google Play.</description>
+The app was completely written in kotlin.</description>
     </item>
     
     <item>
@@ -147,7 +147,7 @@ Founded in December 2015, GrupTrip S.A.L. is a young tech company on a mission t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mhdtouban.github.io/portfolio/portfolio/library-app/</guid>
-      <description>Built at Scryptech.The application provides the possibility of downloading, fully display, browse and search the library&amp;rsquo;s books. These days the app is looking a little dated with its Holo era design, but it still functions just fine. Check it out in Google Play.</description>
+      <description>Built at Scryptech.The application provides the possibility of downloading, fully display, browse and search the library&amp;rsquo;s books. These days the app is looking a little dated with its Holo era design, but it still functions just fine.</description>
     </item>
     
     <item>
@@ -156,7 +156,7 @@ Founded in December 2015, GrupTrip S.A.L. is a young tech company on a mission t
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mhdtouban.github.io/portfolio/portfolio/medstew/</guid>
-      <description>Built at Scryptech. MEDSTEW® is designed for students and tutors in the healthcare field. Users will be able to connect with fellow medical students, tutors, and entire institutions from all over the world. The application uses colourful forms and tabs to make documenting a full history, examination, and investigations easy. It also automatically presents the data in a clear, comprehensive, single page format. The application enables users to search cases across the entire MEDSTEW® community and enables them to store relevant clinical cases to help them meet their study objectives.</description>
+      <description>Built at Scryptech. MEDSTEW is designed for students and tutors in the healthcare field. Users will be able to connect with fellow medical students, tutors, and entire institutions from all over the world. The application uses colourful forms and tabs to make documenting a full history, examination, and investigations easy. It also automatically presents the data in a clear, comprehensive, single page format. The application enables users to search cases across the entire MEDSTEW® community and enables them to store relevant clinical cases to help them meet their study objectives.</description>
     </item>
     
     <item>
@@ -175,8 +175,7 @@ Founded in December 2015, GrupTrip S.A.L. is a young tech company on a mission t
       
       <guid>https://mhdtouban.github.io/portfolio/portfolio/smart-taxi-app/</guid>
       <description>Built at Aiia-solutions.Smart Taxi or Lyft of Arab world ! is an ingenious application architected and conceived in the region, in order to best serve the specific needs &amp;amp; requirements of taxi users in the GCC Countries in particular as well as the Arab world in general.
-Features  Select pickup location Taxi Info Live tracking of taxi driver Call your taxi driver notification for driver status 
-These days the app is looking a little dated with its Holo era design, but it still functions just fine.</description>
+Features  Select pickup location Taxi Info Live tracking of taxi driver Call your taxi driver notification for driver status</description>
     </item>
     
     <item>
@@ -207,7 +206,7 @@ The app can be found in Google Play.</description>
       <guid>https://mhdtouban.github.io/portfolio/portfolio/uburger/</guid>
       <description>Currently under development at Ideatolife.
 UBurger is a restaurant which delivers custom-made burgers. Through the app users can compete to make the best burger of the month by selecting the ingredients and building their own burgers. Those burgers shared the most will be awarded valuable prizes.
-The app is completely written in kotlin.</description>
+The app is completely written in kotlin. Google Play.</description>
     </item>
     
     <item>
@@ -216,7 +215,7 @@ The app is completely written in kotlin.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mhdtouban.github.io/portfolio/portfolio/who-measures/</guid>
-      <description>Built at Ideatolife, the purpose of this application is to report any possible event against health care system in Iraq. The app has completely written in kotlin.</description>
+      <description>Built at Ideatolife, the purpose of this application is to report any possible event against health care system in Iraq. The app has completely written in kotlin. Google Play.</description>
     </item>
     
     <item>

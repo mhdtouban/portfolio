@@ -16,6 +16,5 @@ Features:
 <li>FAVORITES</li>
 </lu>
 
-The app can be found in [droidbin](http://www.droidbin.com/p1c01fd62o1l2u1n757641ts1prg3),
 
 <iframe width="770" height="432" src="https://www.youtube.com/embed/AXwMDDH1xqE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

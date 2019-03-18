@@ -14,5 +14,3 @@ Features
 <li>Call your taxi driver</li>
 <li>notification for driver status</li>
 </lu>
-
-These days the app is looking a little dated with its Holo era design, but it still functions just fine. Check it out in [Google Play](https://play.google.com/store/apps/details?id=smart.taxi.pmu.client).

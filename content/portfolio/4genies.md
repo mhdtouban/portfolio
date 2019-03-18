@@ -10,4 +10,3 @@ Built at [Aiia-Solutions](http://www.aiia-solutions.com/). 4Genies is neutral an
 4Genies allows user to better control their telecom budget by providing detailed charts of their telecom usage on both calls and data usage with a daily, weekly and monthly view.
 
 The digitalization of the voucher picture was developed internally by AiiA solutions using TensorFlow.
-The app can be found in [Google Play](https://play.google.com/store/apps/details?id=com.aiia.cardreader).
